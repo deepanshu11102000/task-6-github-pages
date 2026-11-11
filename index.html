@@ -1,0 +1,186 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Deepanshu | Portfolio</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: Arial, sans-serif;
+            background: #0f172a;
+            color: white;
+            line-height: 1.6;
+        }
+
+        header {
+            padding: 22px 8%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            background: #111c32;
+        }
+
+        header h2 {
+            color: #38bdf8;
+        }
+
+        nav a {
+            color: white;
+            text-decoration: none;
+            margin-left: 22px;
+        }
+
+        .hero {
+            min-height: 75vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+        }
+
+        .hero h1 {
+            font-size: 48px;
+            margin-bottom: 15px;
+        }
+
+        .hero span {
+            color: #38bdf8;
+        }
+
+        .hero p {
+            color: #cbd5e1;
+            font-size: 19px;
+            margin-bottom: 25px;
+        }
+
+        .btn {
+            background: #0284c7;
+            color: white;
+            padding: 12px 25px;
+            border-radius: 6px;
+            text-decoration: none;
+        }
+
+        section {
+            padding: 55px 10%;
+            text-align: center;
+        }
+
+        section h2 {
+            color: #38bdf8;
+            margin-bottom: 20px;
+        }
+
+        .skills {
+            display: flex;
+            justify-content: center;
+            flex-wrap: wrap;
+            gap: 15px;
+        }
+
+        .skills span {
+            background: #1e293b;
+            padding: 12px 22px;
+            border-radius: 8px;
+        }
+
+        .project {
+            background: #1e293b;
+            padding: 25px;
+            border-radius: 10px;
+            max-width: 600px;
+            margin: auto;
+        }
+
+        footer {
+            background: #111c32;
+            text-align: center;
+            padding: 20px;
+            color: #cbd5e1;
+        }
+
+        @media (max-width: 600px) {
+            header {
+                flex-direction: column;
+                gap: 12px;
+            }
+
+            nav a {
+                margin: 0 7px;
+            }
+
+            .hero h1 {
+                font-size: 34px;
+            }
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h2>Deepanshu.</h2>
+        <nav>
+            <a href="#home">Home</a>
+            <a href="#about">About</a>
+            <a href="#skills">Skills</a>
+            <a href="#projects">Projects</a>
+            <a href="#contact">Contact</a>
+        </nav>
+    </header>
+
+    <div class="hero" id="home">
+        <h1>Hi, I'm <span>Deepanshu</span></h1>
+        <p>Aspiring DevOps Engineer | Cloud & Automation Enthusiast</p>
+        <a href="#about" class="btn">Explore My Portfolio</a>
+    </div>
+
+    <section id="about">
+        <h2>About Me</h2>
+        <p>I am a BCA graduate interested in DevOps, Cloud Computing,
+        Linux, Docker and CI/CD automation. I enjoy learning new
+        technologies and building practical projects.</p>
+    </section>
+
+    <section id="skills">
+        <h2>My Skills</h2>
+        <div class="skills">
+            <span>Linux</span>
+            <span>AWS</span>
+            <span>Docker</span>
+            <span>Git & GitHub</span>
+            <span>Jenkins</span>
+            <span>Kubernetes</span>
+            <span>Terraform</span>
+            <span>CI/CD</span>
+        </div>
+    </section>
+
+    <section id="projects">
+        <h2>My Projects</h2>
+        <div class="project">
+            <h3>Node.js CI/CD Deployment</h3>
+            <p>Automated application deployment using GitHub Actions,
+            Docker, DockerHub and AWS EC2.</p>
+        </div>
+    </section>
+
+    <section id="contact">
+        <h2>Contact Me</h2>
+        <p>GitHub: github.com/deepanshu11102000</p>
+    </section>
+
+    <footer>
+        <p>© 2026 Deepanshu. All Rights Reserved.</p>
+    </footer>
+
+</body>
+</html>
